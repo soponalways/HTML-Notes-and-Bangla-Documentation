@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map </title>
+</head>
+<body>
+   <hr/>
+   <h2>Rectangle Shape Example</h2>
+   <hr/>
+    <img src="./workplace.jpg" alt="Workplace" usemap="#workmap" height="379px" width="400px"> 
+
+    <map name="workmap">
+         <!--* for rect coords: left-margin,top, left-margin, top  -->
+         <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"/>
+    </map>
+
+    <hr/>
+    <h2>Circle Shape Example</h2>
+    <hr/>
+    <img src="./workplace.jpg" alt="Workplace" usemap="#workmap2" height="379px" width="400px"> 
+
+    <map name="workmap2">
+        <!--* for circle coords: center of the circle(width,height), circle-radius -->
+         <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html"/>
+    </map>
+    
+   <hr/>
+   <h2>Polygonal Shape Example</h2>
+   <hr/>
+   <img src="./frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675">
+
+    <map name="foodmap">
+         <!--* for poly coords: 1st coords(x,y),2nd coords(x,y) ..... -->
+         <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.htm"/>
+    </map>
+</body>
+</html>
